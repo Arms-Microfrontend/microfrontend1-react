@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+ /* * {
+  outline: 1px solid;
+ } */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.react-container {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.project-button {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #dd5928;
+  color: white;
+  height: fit-content
 }
