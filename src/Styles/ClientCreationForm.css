@@ -1,0 +1,47 @@
+/* ClientCreationForm.css */
+.client-creation-form {
+    width: 70%;
+    margin: auto;
+    margin-top: 4em;
+  }
+  
+  .client-creation-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .client-creation-form input,
+  .client-creation-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .client-creation-form button {
+    background-color: #dd5928;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 1em;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .form-group {
+    display: grid;
+    gap: 1em;
+    width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  /* * {
+    outline: 1px solid;
+  } */
+  

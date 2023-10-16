@@ -1,15 +1,26 @@
 import React from "react";
-import "../App.css"
+import { useNavigate } from "react-router-dom";
+import ClientTable from "./ClientTable";
+import "../App.css";
 
 function ClientManager() {
-  const openAlert = () => {
-    window.alert("clicked")
-  }
+  const navigate = useNavigate();
+  const existingData = JSON.parse(localStorage.getItem("clientData")) || [];
+
+  const openCreateClient = () => {
+    navigate("/create-client");
+  };
+
   return (
-    <div className="react-container">
-      <h2>Client Manager</h2>
-      <button className="project-button" onClick={openAlert}>Create client</button>
-    </div>
+    <>
+      <div className="react-container">
+        <h2>Client Manager</h2>
+        <button className="project-button" onClick={openCreateClient}>
+          Create client
+        </button>
+      </div>
+      <ClientTable clientData={existingData} />
+    </>
   );
 }
 
