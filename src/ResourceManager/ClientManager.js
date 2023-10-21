@@ -8,7 +8,7 @@ function ClientManager() {
   const existingData = JSON.parse(localStorage.getItem("clientData")) || [];
 
   const openCreateClient = () => {
-    navigate("/create-client");
+    navigate("/");
   };
 
   return (
